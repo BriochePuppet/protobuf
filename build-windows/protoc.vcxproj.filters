@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\upb\message\accessors.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\mem\alloc.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\mem\arena.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\array.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\lex\atoi.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\mini_descriptor\internal\base92.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\mini_descriptor\build_enum.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\wire\byte_size.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\hash\common.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\compare.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\internal\compare_unknown.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\compat.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\copy.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\text\debug_string.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\json\decode.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\mini_descriptor\decode.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\wire\decode.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\wire\internal\decoder.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\internal\def_builder.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\def_pool.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\util\def_to_proto.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\def_type.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\desc_state.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\cmake\google\protobuf\descriptor.upb_minitable.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\json\encode.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\mini_descriptor\internal\encode.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\text\internal\encode.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\text\encode.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\wire\encode.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\enum_def.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\enum_reserved_range.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\enum_value_def.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\wire\eps_copy_input_stream.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\internal\extension.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\extension_range.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\mini_table\extension_registry.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\field_def.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\file_def.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\internal\iterator.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\mini_descriptor\link.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\map.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\map_sorter.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\merge.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\mini_table\internal\message.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\message.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\mini_table\message.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\message.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\message\internal\message.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\message_def.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\message_reserved_range.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\method_def.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\oneof_def.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\wire\reader.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\util\required_fields.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\lex\round_trip.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\wire\decode_fast\select.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\service_def.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\base\status.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\reflection\internal\strdup2.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\lex\strtod.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb\lex\unicode.c">
+      <Filter>libupb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\accessor_case.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\accessors.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\code_generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\code_generator_lite.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\command_line_interface.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb_generator\common.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\context.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\context.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\cord_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\crate_mapping.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_doc_comment.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_enum.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_enum_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_field_base.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_helpers.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_map_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_message.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_message_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_primitive_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_reflection_class.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_repeated_enum_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_repeated_message_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_repeated_primitive_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_source_generator_base.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_wrapper_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\default_value.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\doc_comment.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\enum.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\enum.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\enum.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\enum.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\enum.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\enum_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\enum_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\enum_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\enum_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\extension.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\extension.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\extension.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\extension.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\kotlin\field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_chunk.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\field_common.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\file.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\file.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\kotlin\file.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\file.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb_generator\file_layout.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\kotlin\generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\python\generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\generator_factory.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\generator_factory.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\helpers.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\helpers.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\python\helpers.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\helpers.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\ifndef_guard.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\import_writer.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\internal_helpers.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\java_features.pb.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\line_consumer.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\make_field_gens.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\make_field_gens.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\map.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\map_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\map_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\map_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\map_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\message.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\kotlin\message.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\message.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\message.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\message.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\message.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\message_builder.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\message_builder.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\message_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\message_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\message_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\message_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\message_layout_helper.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\message_serialization.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\name_resolver.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\names.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb_generator\minitable\names.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\names.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb_generator\common\names.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\php\names.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\names.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb_generator\minitable\names_internal.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\namespace_printer.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\naming.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\oneof.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\oneof.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\parse_function_generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\php\php_generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\plugin.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\upb_generator\plugin.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\plugin.pb.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\primitive_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\primitive_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\primitive_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\primitive_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\python\pyi_generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\relative_path.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\repeated_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\retention.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\ruby\ruby_generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\rust_field_type.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\rust_keywords.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\service.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\service.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\shared_code_generator.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\singular_cord.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\singular_message.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\singular_scalar.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\singular_string.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\string_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\string_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\string_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\string_view_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\subprocess.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\tf_decode_data.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\tracker.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\unsupported_field.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\upb_helpers.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\versions.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\with_presence.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\zip_writer.cc">
+      <Filter>libprotoc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\google\protobuf\compiler\main.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="libprotoc">
+      <UniqueIdentifier>{610cfd85-aa59-4728-bc6f-c518399a8b27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libupb">
+      <UniqueIdentifier>{e29edb37-22dc-4a38-b884-ff84cf7ff9b1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
