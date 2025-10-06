@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\google\protobuf\compiler\code_generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\code_generator_lite.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\command_line_interface.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\enum.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\extension.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_chunk.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\cord_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\enum_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\map_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\message_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\primitive_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\string_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\field_generators\string_view_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\file.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\helpers.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\ifndef_guard.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\message.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\message_layout_helper.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\namespace_printer.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\parse_function_generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\service.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\cpp\tracker.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_doc_comment.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_enum.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_enum_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_field_base.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_helpers.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_map_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_message.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_message_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_primitive_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_reflection_class.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_repeated_enum_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_repeated_message_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_repeated_primitive_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_source_generator_base.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\csharp_wrapper_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\csharp\names.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\context.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\doc_comment.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\field_common.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\file.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\enum.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\enum_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\extension.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\generator_factory.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\make_field_gens.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\map_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\message.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\message_builder.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\message_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\primitive_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\service.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\full\string_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\helpers.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\internal_helpers.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\java_features.pb.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\enum.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\enum_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\extension.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\generator_factory.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\make_field_gens.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\map_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\message.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\message_builder.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\message_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\primitive_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\lite\string_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\message_serialization.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\names.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\name_resolver.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\java\shared_code_generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\kotlin\field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\kotlin\file.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\kotlin\generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\kotlin\message.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\main.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\enum.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\enum_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\extension.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\file.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\helpers.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\import_writer.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\line_consumer.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\map_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\message.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\message_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\names.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\oneof.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\primitive_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\objectivec\tf_decode_data.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\php\names.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\php\php_generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\plugin.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\plugin.pb.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\python\generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\python\helpers.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\python\pyi_generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\retention.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\ruby\ruby_generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\accessors.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\accessor_case.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\default_value.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\map.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\repeated_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\singular_cord.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\singular_message.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\singular_scalar.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\singular_string.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\unsupported_field.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\accessors\with_presence.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\context.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\crate_mapping.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\enum.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\generator.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\message.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\naming.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\oneof.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\relative_path.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\rust_field_type.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\rust_keywords.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\rust\upb_helpers.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\subprocess.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\versions.cc" />
+    <ClCompile Include="..\src\google\protobuf\compiler\zip_writer.cc" />
+    <ClCompile Include="..\upb\base\status.c" />
+    <ClCompile Include="..\upb\hash\common.c" />
+    <ClCompile Include="..\upb\json\decode.c" />
+    <ClCompile Include="..\upb\json\encode.c" />
+    <ClCompile Include="..\upb\lex\atoi.c" />
+    <ClCompile Include="..\upb\lex\round_trip.c" />
+    <ClCompile Include="..\upb\lex\strtod.c" />
+    <ClCompile Include="..\upb\lex\unicode.c" />
+    <ClCompile Include="..\upb\mem\alloc.c" />
+    <ClCompile Include="..\upb\mem\arena.c" />
+    <ClCompile Include="..\upb\message\accessors.c" />
+    <ClCompile Include="..\upb\message\array.c" />
+    <ClCompile Include="..\upb\message\compare.c" />
+    <ClCompile Include="..\upb\message\compat.c" />
+    <ClCompile Include="..\upb\message\copy.c" />
+    <ClCompile Include="..\upb\message\internal\compare_unknown.c" />
+    <ClCompile Include="..\upb\message\internal\extension.c" />
+    <ClCompile Include="..\upb\message\internal\iterator.c" />
+    <ClCompile Include="..\upb\message\internal\message.c" />
+    <ClCompile Include="..\upb\message\map.c" />
+    <ClCompile Include="..\upb\message\map_sorter.c" />
+    <ClCompile Include="..\upb\message\merge.c" />
+    <ClCompile Include="..\upb\message\message.c" />
+    <ClCompile Include="..\upb\mini_descriptor\build_enum.c" />
+    <ClCompile Include="..\upb\mini_descriptor\decode.c" />
+    <ClCompile Include="..\upb\mini_descriptor\internal\base92.c" />
+    <ClCompile Include="..\upb\mini_descriptor\internal\encode.c" />
+    <ClCompile Include="..\upb\mini_descriptor\link.c" />
+    <ClCompile Include="..\upb\mini_table\extension_registry.c" />
+    <ClCompile Include="..\upb\mini_table\internal\message.c" />
+    <ClCompile Include="..\upb\mini_table\message.c" />
+    <ClCompile Include="..\upb\reflection\cmake\google\protobuf\descriptor.upb_minitable.c" />
+    <ClCompile Include="..\upb\reflection\def_pool.c" />
+    <ClCompile Include="..\upb\reflection\def_type.c" />
+    <ClCompile Include="..\upb\reflection\desc_state.c" />
+    <ClCompile Include="..\upb\reflection\enum_def.c" />
+    <ClCompile Include="..\upb\reflection\enum_reserved_range.c" />
+    <ClCompile Include="..\upb\reflection\enum_value_def.c" />
+    <ClCompile Include="..\upb\reflection\extension_range.c" />
+    <ClCompile Include="..\upb\reflection\field_def.c" />
+    <ClCompile Include="..\upb\reflection\file_def.c" />
+    <ClCompile Include="..\upb\reflection\internal\def_builder.c" />
+    <ClCompile Include="..\upb\reflection\internal\strdup2.c" />
+    <ClCompile Include="..\upb\reflection\message.c" />
+    <ClCompile Include="..\upb\reflection\message_def.c" />
+    <ClCompile Include="..\upb\reflection\message_reserved_range.c" />
+    <ClCompile Include="..\upb\reflection\method_def.c" />
+    <ClCompile Include="..\upb\reflection\oneof_def.c" />
+    <ClCompile Include="..\upb\reflection\service_def.c" />
+    <ClCompile Include="..\upb\text\debug_string.c" />
+    <ClCompile Include="..\upb\text\encode.c" />
+    <ClCompile Include="..\upb\text\internal\encode.c" />
+    <ClCompile Include="..\upb\util\def_to_proto.c" />
+    <ClCompile Include="..\upb\util\required_fields.c" />
+    <ClCompile Include="..\upb\wire\byte_size.c" />
+    <ClCompile Include="..\upb\wire\decode.c" />
+    <ClCompile Include="..\upb\wire\decode_fast\select.c" />
+    <ClCompile Include="..\upb\wire\encode.c" />
+    <ClCompile Include="..\upb\wire\eps_copy_input_stream.c" />
+    <ClCompile Include="..\upb\wire\internal\decoder.c" />
+    <ClCompile Include="..\upb\wire\reader.c" />
+    <ClCompile Include="..\upb_generator\common.cc" />
+    <ClCompile Include="..\upb_generator\common\names.cc" />
+    <ClCompile Include="..\upb_generator\file_layout.cc" />
+    <ClCompile Include="..\upb_generator\minitable\names.cc" />
+    <ClCompile Include="..\upb_generator\minitable\names_internal.cc" />
+    <ClCompile Include="..\upb_generator\plugin.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\abseil-cpp\build-windows\abseil-cpp.vcxproj">
+      <Project>{4f102c06-c8c2-4a2e-814e-b624735295bd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libprotobuf.vcxproj">
+      <Project>{4ba84065-90cd-435b-a54b-f12a9c725c3d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{915f2915-16f2-414a-bda4-14a42a300d1f}</ProjectGuid>
+    <RootNamespace>protoc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(SolutionDir)\obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)\obj\$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)\bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GOOGLE_PROTOBUF_CMAKE_BUILD=1;_WIN32_WINNT=0x0601;NOMINMAX=1;WIN32_LEAN_AND_MEAN=1;_CRT_SECURE_NO_WARNINGS=1;_CONSOLE;_DEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\src;$(ProjectDir)\..;$(ProjectDir)\..\upb\reflection\cmake;$(ProjectDir)\..\third_party\utf8_range;$(ProjectDir)\..\..\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <ObjectFileName>$(IntDir)\$(ProjectName)\$(ProjectName)\%(RelativeDir)\</ObjectFileName>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <AssemblerListingLocation>$(IntDir)\$(ProjectName)\$(ProjectName)\%(RelativeDir)\</AssemblerListingLocation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GOOGLE_PROTOBUF_CMAKE_BUILD=1;_WIN32_WINNT=0x0601;NOMINMAX=1;WIN32_LEAN_AND_MEAN=1;_CRT_SECURE_NO_WARNINGS=1;_CONSOLE;NDEBUG;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\src;$(ProjectDir)\..;$(ProjectDir)\..\upb\reflection\cmake;$(ProjectDir)\..\third_party\utf8_range;$(ProjectDir)\..\..\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <ObjectFileName>$(IntDir)\$(ProjectName)\$(ProjectName)\%(RelativeDir)\</ObjectFileName>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <AssemblerListingLocation>$(IntDir)\$(ProjectName)\$(ProjectName)\%(RelativeDir)\</AssemblerListingLocation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GOOGLE_PROTOBUF_CMAKE_BUILD=1;_WIN32_WINNT=0x0601;NOMINMAX=1;WIN32_LEAN_AND_MEAN=1;_CRT_SECURE_NO_WARNINGS=1;_CONSOLE;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\src;$(ProjectDir)\..;$(ProjectDir)\..\upb\reflection\cmake;$(ProjectDir)\..\third_party\utf8_range;$(ProjectDir)\..\..\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <ObjectFileName>$(IntDir)\$(ProjectName)\$(ProjectName)\%(RelativeDir)\</ObjectFileName>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <AssemblerListingLocation>$(IntDir)\$(ProjectName)\$(ProjectName)\%(RelativeDir)\</AssemblerListingLocation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>GOOGLE_PROTOBUF_CMAKE_BUILD=1;_WIN32_WINNT=0x0601;NOMINMAX=1;WIN32_LEAN_AND_MEAN=1;_CRT_SECURE_NO_WARNINGS=1;_CONSOLE;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\src;$(ProjectDir)\..;$(ProjectDir)\..\upb\reflection\cmake;$(ProjectDir)\..\third_party\utf8_range;$(ProjectDir)\..\..\abseil-cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <ObjectFileName>$(IntDir)\$(ProjectName)\$(ProjectName)\%(RelativeDir)\</ObjectFileName>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <AssemblerListingLocation>$(IntDir)\$(ProjectName)\$(ProjectName)\%(RelativeDir)\</AssemblerListingLocation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
